@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_home_login" />
+
+    <ImageView
+        android:id="@+id/iv_Logo"
+        android:layout_width="91dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo">
+
+        <TextView
+            android:id="@+id/tv_title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:gravity="center"
+            android:text="Chọn đúng vị tướng"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tv_description_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:gravity="center"
+            android:text="Lựa chọn vị tướng phù hợp để leo hạng nhanh hơn."
+            android:textColor="@color/gray_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="335dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_start"
+            android:text="Đăng ký miễn phí"
+            android:fontFamily="@font/dm_sans_regular"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/btn_continue_google"
+            android:layout_width="335dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_continue"
+            android:text="Tiếp tục với Google"
+            android:fontFamily="@font/dm_sans_regular"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/btn_continue_riot"
+            android:layout_width="335dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_continue"
+            android:text="Tiếp tục với Riot"
+            android:fontFamily="@font/dm_sans_regular"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/btn_home_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="@font/dm_sans_regular"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
